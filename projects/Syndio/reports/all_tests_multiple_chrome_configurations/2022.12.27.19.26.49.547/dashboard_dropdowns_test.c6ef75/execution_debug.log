@@ -1,0 +1,73 @@
+2022-12-27 19:29:35,449 root INFO Test execution started: dashboard_dropdowns_test
+2022-12-27 19:29:35,449 root INFO Browser: my_custom_chrome_tablet_vertical
+2022-12-27 19:29:35,449 root INFO Environment: test
+2022-12-27 19:29:35,449 root INFO Using data:
+    url: http://localhost:3000/
+2022-12-27 19:29:35,450 root INFO Test started: test_options_in_dropdown
+2022-12-27 19:29:35,450 root INFO Navigate to: 'http://localhost:3000/'
+2022-12-27 19:29:36,465 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--window-size=820,1180"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--window-size=820,1180"]}}}
+2022-12-27 19:29:36,467 urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:49547
+2022-12-27 19:29:40,730 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session HTTP/1.1" 200 801
+2022-12-27 19:29:40,730 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:40,730 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/url {"url": "http://localhost:3000/"}
+2022-12-27 19:29:41,272 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/url HTTP/1.1" 200 14
+2022-12-27 19:29:41,272 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:41,273 root INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+2022-12-27 19:29:41,273 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"tab-gender\"]"}
+2022-12-27 19:29:41,372 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 404 2211
+2022-12-27 19:29:41,372 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:41,877 root DEBUG Element not found yet, remaining time: 29.40
+2022-12-27 19:29:41,878 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"tab-gender\"]"}
+2022-12-27 19:29:41,918 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 404 2211
+2022-12-27 19:29:41,918 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,423 root DEBUG Element not found yet, remaining time: 28.85
+2022-12-27 19:29:42,424 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"tab-gender\"]"}
+2022-12-27 19:29:42,443 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 200 88
+2022-12-27 19:29:42,444 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,444 root DEBUG Element found
+2022-12-27 19:29:42,444 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"dropdown-button\"]"}
+2022-12-27 19:29:42,460 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 200 88
+2022-12-27 19:29:42,460 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,460 root DEBUG Element found
+2022-12-27 19:29:42,460 root INFO Click dropdown_button
+2022-12-27 19:29:42,460 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/c7f9bebd-5325-4452-a16d-5e34fc1d7cc5/click {"id": "c7f9bebd-5325-4452-a16d-5e34fc1d7cc5"}
+2022-12-27 19:29:42,741 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/c7f9bebd-5325-4452-a16d-5e34fc1d7cc5/click HTTP/1.1" 200 14
+2022-12-27 19:29:42,742 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,742 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"a9f6a4b7-d03c-4a45-b64b-791e054f36b8\"]"}
+2022-12-27 19:29:42,748 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 200 88
+2022-12-27 19:29:42,749 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,749 root DEBUG Element found
+2022-12-27 19:29:42,749 root INFO Assert element group_by_function text is 'Group by Function'
+2022-12-27 19:29:42,749 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text {"id": "0903805d-ec78-4d2b-a149-675ee87443a2"}
+2022-12-27 19:29:42,787 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text HTTP/1.1" 200 29
+2022-12-27 19:29:42,787 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,787 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text {"id": "0903805d-ec78-4d2b-a149-675ee87443a2"}
+2022-12-27 19:29:42,793 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text HTTP/1.1" 200 29
+2022-12-27 19:29:42,793 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,793 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "[id=\"f1b01b57-3147-476a-a632-0c10ad2a3c1a\"]"}
+2022-12-27 19:29:42,799 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 200 88
+2022-12-27 19:29:42,799 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,799 root DEBUG Element found
+2022-12-27 19:29:42,799 root INFO Assert element group_by_role text is 'Group by Role'
+2022-12-27 19:29:42,799 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/b397d76e-bd8b-4d81-995a-8d1d24e6957e/text {"id": "b397d76e-bd8b-4d81-995a-8d1d24e6957e"}
+2022-12-27 19:29:42,806 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/b397d76e-bd8b-4d81-995a-8d1d24e6957e/text HTTP/1.1" 200 25
+2022-12-27 19:29:42,806 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,806 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/b397d76e-bd8b-4d81-995a-8d1d24e6957e/text {"id": "b397d76e-bd8b-4d81-995a-8d1d24e6957e"}
+2022-12-27 19:29:42,811 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/b397d76e-bd8b-4d81-995a-8d1d24e6957e/text HTTP/1.1" 200 25
+2022-12-27 19:29:42,811 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,811 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element {"using": "css selector", "value": "li.disabled"}
+2022-12-27 19:29:42,817 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "POST /session/b76e90d68ba3525e8a4353a71b5dbdfd/element HTTP/1.1" 200 88
+2022-12-27 19:29:42,817 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,817 root DEBUG Element found
+2022-12-27 19:29:42,817 root INFO Assert element disabled_dropdown_option text is 'Group by Function'
+2022-12-27 19:29:42,817 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text {"id": "0903805d-ec78-4d2b-a149-675ee87443a2"}
+2022-12-27 19:29:42,820 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text HTTP/1.1" 200 29
+2022-12-27 19:29:42,820 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,820 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text {"id": "0903805d-ec78-4d2b-a149-675ee87443a2"}
+2022-12-27 19:29:42,823 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "GET /session/b76e90d68ba3525e8a4353a71b5dbdfd/element/0903805d-ec78-4d2b-a149-675ee87443a2/text HTTP/1.1" 200 29
+2022-12-27 19:29:42,823 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-27 19:29:42,824 root INFO Test Result: SUCCESS
+2022-12-27 19:29:42,824 root DEBUG test does not have a teardown function
+2022-12-27 19:29:42,824 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:49547/session/b76e90d68ba3525e8a4353a71b5dbdfd {}
+2022-12-27 19:29:42,876 urllib3.connectionpool DEBUG http://127.0.0.1:49547 "DELETE /session/b76e90d68ba3525e8a4353a71b5dbdfd HTTP/1.1" 200 14
+2022-12-27 19:29:42,876 selenium.webdriver.remote.remote_connection DEBUG Finished Request

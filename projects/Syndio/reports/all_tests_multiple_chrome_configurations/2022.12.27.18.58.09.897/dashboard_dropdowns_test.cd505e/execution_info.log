@@ -1,0 +1,31 @@
+19:00:20.492 INFO Test execution started: dashboard_dropdowns_test
+19:00:20.492 INFO Browser: my_custom_chrome_tablet_horizontal
+19:00:20.492 INFO Environment: test
+19:00:20.492 INFO Using data:
+    url: http://localhost:3000/
+19:00:20.493 INFO Test started: test_options_in_dropdown
+19:00:20.493 INFO Navigate to: 'http://localhost:3000/'
+19:00:26.960 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+19:00:28.145 INFO Click dropdown_button
+19:00:28.440 INFO Assert element group_by_function text is 'Group by Function'
+19:00:28.474 INFO Assert element group_by_role text is 'Group by Role'
+19:00:28.493 INFO Assert element disabled_dropdown_option text is 'Group by Function'
+19:00:28.500 INFO Test Result: SUCCESS
+19:00:28.501 INFO Test started: test_can_select_by_role
+19:00:28.501 INFO Navigate to: 'http://localhost:3000/'
+19:00:28.628 INFO Click dropdown_button
+19:00:29.181 INFO Click group_by_role
+19:00:29.295 INFO Click dropdown_button
+19:00:29.330 INFO Assert element disabled_dropdown_option text is 'Group by Role'
+19:00:29.343 ERROR AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_dropdowns_test.py", line 20, in test_can_select_by_role
+    dashboard_page.check_disabled_dropdown_option("Group by Role")
+  File "/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py", line 35, in check_disabled_dropdown_option
+    actions.assert_element_text(disabled_dropdown_option, option_name)
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+19:00:29.444 INFO Test Result: FAILURE

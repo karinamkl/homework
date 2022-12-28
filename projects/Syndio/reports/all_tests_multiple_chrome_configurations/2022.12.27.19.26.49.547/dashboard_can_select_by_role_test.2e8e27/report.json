@@ -1,0 +1,57 @@
+[
+    {
+        "test_file": "dashboard_can_select_by_role_test",
+        "test": "test_can_select_by_role",
+        "set_name": "2e8e27",
+        "environment": "test",
+        "result": "failure",
+        "description": null,
+        "browser": "my_custom_chrome_tablet_vertical",
+        "test_data": {
+            "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+        },
+        "steps": [
+            {
+                "message": "Navigate to: 'http://localhost:3000/'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click dropdown_button",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click group_by_role",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click dropdown_button",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element disabled_dropdown_option text is 'Group by Role'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Failure",
+                "screenshot": "Failure_db3a5.png",
+                "error": {
+                    "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                }
+            }
+        ],
+        "errors": [
+            {
+                "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+            }
+        ],
+        "elapsed_time": 7.1,
+        "timestamp": "2022.12.27.19.28.36.326"
+    }
+]

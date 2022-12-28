@@ -1,0 +1,49 @@
+[
+    {
+        "test_file": "dashboard_dropdowns_test",
+        "test": "test_options_in_dropdown",
+        "set_name": "eac521",
+        "environment": "test",
+        "result": "success",
+        "description": "Verify dashboard contains dropdown with Group by Function and Group by Role options. Group by Function is selected by default. ",
+        "browser": "chrome",
+        "test_data": {
+            "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+        },
+        "steps": [
+            {
+                "message": "Navigate to: 'http://localhost:3000/'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click dropdown_button",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element group_by_function text is 'Group by Function'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element group_by_role text is 'Group by Role'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element disabled_dropdown_option text is 'Group by Function'",
+                "screenshot": null,
+                "error": null
+            }
+        ],
+        "errors": [],
+        "elapsed_time": 7.33,
+        "timestamp": "2022.12.27.19.09.04.070"
+    }
+]

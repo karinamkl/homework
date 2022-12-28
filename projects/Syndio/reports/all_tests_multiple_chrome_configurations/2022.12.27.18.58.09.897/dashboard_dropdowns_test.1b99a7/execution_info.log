@@ -1,0 +1,31 @@
+19:00:12.050 INFO Test execution started: dashboard_dropdowns_test
+19:00:12.050 INFO Browser: chrome
+19:00:12.050 INFO Environment: test
+19:00:12.050 INFO Using data:
+    url: http://localhost:3000/
+19:00:12.051 INFO Test started: test_options_in_dropdown
+19:00:12.051 INFO Navigate to: 'http://localhost:3000/'
+19:00:17.962 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+19:00:19.085 INFO Click dropdown_button
+19:00:19.358 INFO Assert element group_by_function text is 'Group by Function'
+19:00:19.387 INFO Assert element group_by_role text is 'Group by Role'
+19:00:19.406 INFO Assert element disabled_dropdown_option text is 'Group by Function'
+19:00:19.413 INFO Test Result: SUCCESS
+19:00:19.413 INFO Test started: test_can_select_by_role
+19:00:19.413 INFO Navigate to: 'http://localhost:3000/'
+19:00:19.541 INFO Click dropdown_button
+19:00:20.092 INFO Click group_by_role
+19:00:20.202 INFO Click dropdown_button
+19:00:20.243 INFO Assert element disabled_dropdown_option text is 'Group by Role'
+19:00:20.255 ERROR AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_dropdowns_test.py", line 20, in test_can_select_by_role
+    dashboard_page.check_disabled_dropdown_option("Group by Role")
+  File "/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py", line 35, in check_disabled_dropdown_option
+    actions.assert_element_text(disabled_dropdown_option, option_name)
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+19:00:20.428 INFO Test Result: FAILURE

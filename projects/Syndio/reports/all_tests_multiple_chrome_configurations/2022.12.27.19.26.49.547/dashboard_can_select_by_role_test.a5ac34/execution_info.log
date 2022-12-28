@@ -1,0 +1,23 @@
+19:28:43.496 INFO Test execution started: dashboard_can_select_by_role_test
+19:28:43.496 INFO Browser: my_custom_chrome_phone
+19:28:43.496 INFO Environment: test
+19:28:43.496 INFO Using data:
+    url: http://localhost:3000/
+19:28:43.496 INFO Test started: test_can_select_by_role
+19:28:43.497 INFO Navigate to: 'http://localhost:3000/'
+19:28:49.402 INFO Click dropdown_button
+19:28:50.270 INFO Click group_by_role
+19:28:50.407 INFO Click dropdown_button
+19:28:50.444 INFO Assert element disabled_dropdown_option text is 'Group by Role'
+19:28:50.477 ERROR AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py", line 10, in test_can_select_by_role
+    dashboard_page.check_disabled_dropdown_option("Group by Role")
+  File "/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py", line 35, in check_disabled_dropdown_option
+    actions.assert_element_text(disabled_dropdown_option, option_name)
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'
+19:28:50.547 INFO Test Result: FAILURE

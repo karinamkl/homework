@@ -1,0 +1,23 @@
+19:26:59.623 INFO Test execution started: dashboard_by_role_gender_test
+19:26:59.623 INFO Browser: my_custom_chrome_tablet_horizontal
+19:26:59.623 INFO Environment: test
+19:26:59.623 INFO Using data:
+    url: http://localhost:3000/
+19:26:59.624 INFO Test started: test_by_gender
+19:26:59.624 INFO Navigate to: 'http://localhost:3000/'
+19:27:05.542 INFO Click dropdown_button
+19:27:06.452 INFO Click group_by_role
+19:27:06.556 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+19:27:06.569 INFO Assert element active_tab text is 'Gender'
+19:27:06.598 INFO Assert element pay_equity_gap_label text is 'Pay Equity Gap'
+19:27:06.641 INFO Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'
+19:27:06.657 ERROR AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py", line 14, in test_by_gender
+    assert_element_text(dashboard_page.pay_equity_gap_p, "Men earn 97¢ for every $1 earned by comparable Women")
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'
+19:27:06.726 INFO Test Result: FAILURE

@@ -1,0 +1,10 @@
+[
+    {
+        "id": "f0c1d82c",
+        "username": "admin",
+        "password": "pbkdf2:sha256:260000$TNex5Fu0o0h9GQsl$0409e532ac92ab67b07029ba912c0fc589aa5e06c43277f612f8f389378ab787",
+        "email": null,
+        "is_superuser": true,
+        "projects": {}
+    }
+]

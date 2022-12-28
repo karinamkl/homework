@@ -1,0 +1,77 @@
+[
+    {
+        "test_file": "dashboard_by_function_gender_test",
+        "test": "test_by_gender",
+        "set_name": "cc96e4",
+        "environment": "test",
+        "result": "failure",
+        "description": "Verify when Grouped by Function and Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+        "browser": "my_custom_chrome_tablet_horizontal",
+        "test_data": {
+            "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+        },
+        "steps": [
+            {
+                "message": "Navigate to: 'http://localhost:3000/'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element active_tab text is 'Gender'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element employees_comparison_label text is 'Employees in Comparison'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element employees_comparison_p text is 'Women make up 41% of employees'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element budget_label text is 'Budget'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Failure",
+                "screenshot": "Failure_bee9f.png",
+                "error": {
+                    "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                }
+            }
+        ],
+        "errors": [
+            {
+                "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+            }
+        ],
+        "elapsed_time": 7.85,
+        "timestamp": "2022.12.27.19.28.58.052"
+    }
+]

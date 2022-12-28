@@ -1,0 +1,25 @@
+19:08:55.785 INFO Test execution started: dashboard_by_function_gender_test
+19:08:55.785 INFO Browser: my_custom_chrome_phone
+19:08:55.785 INFO Environment: test
+19:08:55.785 INFO Using data:
+    url: http://localhost:3000/
+19:08:55.785 INFO Test started: test_by_gender
+19:08:55.786 INFO Navigate to: 'http://localhost:3000/'
+19:09:01.581 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+19:09:02.770 INFO Assert element active_tab text is 'Gender'
+19:09:02.827 INFO Assert element pay_equity_gap_label text is 'Pay Equity Gap'
+19:09:02.847 INFO Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'
+19:09:02.870 INFO Assert element employees_comparison_label text is 'Employees in Comparison'
+19:09:02.888 INFO Assert element employees_comparison_p text is 'Women make up 41% of employees'
+19:09:02.908 INFO Assert element budget_label text is 'Budget'
+19:09:02.925 INFO Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'
+19:09:02.939 ERROR AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py", line 16, in test_by_gender
+    assert_element_text(dashboard_page.budget_p, "$235,000 minimum recommended budget to reduce pay equity gap")
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'
+19:09:03.005 INFO Test Result: FAILURE

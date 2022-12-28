@@ -1,0 +1,62 @@
+[
+    {
+        "test_file": "dashboard_by_function_race_test",
+        "test": "test_by_race",
+        "set_name": "710148",
+        "environment": "test",
+        "result": "failure",
+        "description": "Verify when Grouped by Function and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+        "browser": "chrome",
+        "test_data": {
+            "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+        },
+        "steps": [
+            {
+                "message": "Navigate to: 'http://localhost:3000/'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click tab_race",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element active_tab text is 'Race'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_p text is 'Hispanics earn 86¢ for every $1 earned by comparable Whites'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Failure",
+                "screenshot": "Failure_0be89.png",
+                "error": {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            }
+        ],
+        "errors": [
+            {
+                "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+            }
+        ],
+        "elapsed_time": 7.42,
+        "timestamp": "2022.12.27.18.58.41.603"
+    }
+]
