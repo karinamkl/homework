@@ -16,8 +16,7 @@ Reports can be viewed in reports section of Golem gui with screenshots attached 
 
 Recording of test execution:
 
-<video src="run.mp4" controls="controls">
-</video>
+https://user-images.githubusercontent.com/20668526/209860950-8c452259-caf1-4e00-a054-2a8fc2c29cbb.mp4
 
 ## Requirements
 ### Python
