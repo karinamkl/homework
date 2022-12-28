@@ -1,0 +1,93 @@
+2022-12-28 12:42:06,176 root INFO Test execution started: dashboard_by_role_race_test
+2022-12-28 12:42:06,176 root INFO Browser: my_custom_chrome_tablet_horizontal
+2022-12-28 12:42:06,176 root INFO Environment: test
+2022-12-28 12:42:06,176 root INFO Using data:
+    url: http://localhost:3000/
+2022-12-28 12:42:06,177 root INFO Test started: test_by_race
+2022-12-28 12:42:06,177 root INFO Navigate to: 'http://localhost:3000/'
+2022-12-28 12:42:07,194 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--window-size=1180,820"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--window-size=1180,820"]}}}
+2022-12-28 12:42:07,196 urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:62439
+2022-12-28 12:42:11,460 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session HTTP/1.1" 200 801
+2022-12-28 12:42:11,461 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:11,461 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/url {"url": "http://localhost:3000/"}
+2022-12-28 12:42:12,033 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/url HTTP/1.1" 200 14
+2022-12-28 12:42:12,033 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,033 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "[id=\"dropdown-button\"]"}
+2022-12-28 12:42:12,131 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,131 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,131 root DEBUG Element found
+2022-12-28 12:42:12,131 root INFO Click dropdown_button
+2022-12-28 12:42:12,131 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ef8fdd73-b476-48fe-9fbc-a8b4371005ff/click {"id": "ef8fdd73-b476-48fe-9fbc-a8b4371005ff"}
+2022-12-28 12:42:12,486 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ef8fdd73-b476-48fe-9fbc-a8b4371005ff/click HTTP/1.1" 200 14
+2022-12-28 12:42:12,486 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,486 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "[id=\"f1b01b57-3147-476a-a632-0c10ad2a3c1a\"]"}
+2022-12-28 12:42:12,546 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,546 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,546 root DEBUG Element found
+2022-12-28 12:42:12,546 root INFO Click group_by_role
+2022-12-28 12:42:12,546 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/796dbf78-922c-477f-8cd1-76eb46ae816d/click {"id": "796dbf78-922c-477f-8cd1-76eb46ae816d"}
+2022-12-28 12:42:12,670 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/796dbf78-922c-477f-8cd1-76eb46ae816d/click HTTP/1.1" 200 14
+2022-12-28 12:42:12,670 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,670 root INFO Wait for element ('id', 'tab-race', 'tab_race') to be present
+2022-12-28 12:42:12,671 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "[id=\"tab-race\"]"}
+2022-12-28 12:42:12,771 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,771 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,771 root DEBUG Element found
+2022-12-28 12:42:12,771 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "[id=\"tab-race\"]"}
+2022-12-28 12:42:12,784 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,784 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,784 root DEBUG Element found
+2022-12-28 12:42:12,784 root INFO Click tab_race
+2022-12-28 12:42:12,784 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/80e255a1-7c8a-43bc-97d5-8ff7d3d4ef39/click {"id": "80e255a1-7c8a-43bc-97d5-8ff7d3d4ef39"}
+2022-12-28 12:42:12,813 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/80e255a1-7c8a-43bc-97d5-8ff7d3d4ef39/click HTTP/1.1" 200 14
+2022-12-28 12:42:12,813 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,814 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "button.tab.tab-active"}
+2022-12-28 12:42:12,820 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,820 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,820 root DEBUG Element found
+2022-12-28 12:42:12,820 root INFO Assert element active_tab text is 'Race'
+2022-12-28 12:42:12,820 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ebc1199e-6c62-496b-b87e-4ce4db64462f/text {"id": "ebc1199e-6c62-496b-b87e-4ce4db64462f"}
+2022-12-28 12:42:12,852 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ebc1199e-6c62-496b-b87e-4ce4db64462f/text HTTP/1.1" 200 16
+2022-12-28 12:42:12,853 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,853 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ebc1199e-6c62-496b-b87e-4ce4db64462f/text {"id": "ebc1199e-6c62-496b-b87e-4ce4db64462f"}
+2022-12-28 12:42:12,858 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/ebc1199e-6c62-496b-b87e-4ce4db64462f/text HTTP/1.1" 200 16
+2022-12-28 12:42:12,859 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,859 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "#payEquityGap > label"}
+2022-12-28 12:42:12,864 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,864 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,864 root DEBUG Element found
+2022-12-28 12:42:12,864 root INFO Assert element pay_equity_gap_label text is 'Pay Equity Gap'
+2022-12-28 12:42:12,864 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/879c5408-6f0f-4f3b-9e9d-112dcfe2420e/text {"id": "879c5408-6f0f-4f3b-9e9d-112dcfe2420e"}
+2022-12-28 12:42:12,874 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/879c5408-6f0f-4f3b-9e9d-112dcfe2420e/text HTTP/1.1" 200 26
+2022-12-28 12:42:12,874 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,874 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/879c5408-6f0f-4f3b-9e9d-112dcfe2420e/text {"id": "879c5408-6f0f-4f3b-9e9d-112dcfe2420e"}
+2022-12-28 12:42:12,878 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/879c5408-6f0f-4f3b-9e9d-112dcfe2420e/text HTTP/1.1" 200 26
+2022-12-28 12:42:12,878 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,878 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element {"using": "css selector", "value": "#payEquityGap > p"}
+2022-12-28 12:42:12,883 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "POST /session/24c47d4b66240c91bdd3f2e9c2a1580a/element HTTP/1.1" 200 88
+2022-12-28 12:42:12,883 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,883 root DEBUG Element found
+2022-12-28 12:42:12,883 root INFO Assert element pay_equity_gap_p text is 'Asians earn 87¢ for every $1 earned by comparable Hispanics'
+2022-12-28 12:42:12,883 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439/text {"id": "6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439"}
+2022-12-28 12:42:12,894 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439/text HTTP/1.1" 200 65
+2022-12-28 12:42:12,894 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,894 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/element/6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439/text {"id": "6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439"}
+2022-12-28 12:42:12,901 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/element/6b6e76ce-ff9b-4b38-98dc-fddd9e4a2439/text HTTP/1.1" 200 65
+2022-12-28 12:42:12,902 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,902 root ERROR AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py", line 15, in test_by_race
+    assert_element_text(dashboard_page.pay_equity_gap_p, "Asians earn 87¢ for every $1 earned by comparable Hispanics")
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'
+2022-12-28 12:42:12,902 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a/screenshot {}
+2022-12-28 12:42:12,981 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "GET /session/24c47d4b66240c91bdd3f2e9c2a1580a/screenshot HTTP/1.1" 200 66248
+2022-12-28 12:42:12,981 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2022-12-28 12:42:12,982 root INFO Test Result: FAILURE
+2022-12-28 12:42:12,982 root DEBUG test does not have a teardown function
+2022-12-28 12:42:12,982 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:62439/session/24c47d4b66240c91bdd3f2e9c2a1580a {}
+2022-12-28 12:42:13,034 urllib3.connectionpool DEBUG http://127.0.0.1:62439 "DELETE /session/24c47d4b66240c91bdd3f2e9c2a1580a HTTP/1.1" 200 14
+2022-12-28 12:42:13,034 selenium.webdriver.remote.remote_connection DEBUG Finished Request

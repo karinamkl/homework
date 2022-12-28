@@ -1,0 +1,67 @@
+[
+    {
+        "test_file": "dashboard_by_role_gender_test",
+        "test": "test_by_gender",
+        "set_name": "7dead6",
+        "environment": "test",
+        "result": "failure",
+        "description": "Verify when Grouped by Role and either Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+        "browser": "my_custom_chrome_tablet_vertical",
+        "test_data": {
+            "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+        },
+        "steps": [
+            {
+                "message": "Navigate to: 'http://localhost:3000/'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click dropdown_button",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click group_by_role",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element active_tab text is 'Gender'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Failure",
+                "screenshot": "Failure_af7ac.png",
+                "error": {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            }
+        ],
+        "errors": [
+            {
+                "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+            }
+        ],
+        "elapsed_time": 7.12,
+        "timestamp": "2022.12.28.12.41.13.598"
+    }
+]

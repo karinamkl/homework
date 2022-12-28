@@ -1,0 +1,25 @@
+12:42:55.077 INFO Test execution started: dashboard_by_function_gender_test
+12:42:55.077 INFO Browser: chrome
+12:42:55.077 INFO Environment: test
+12:42:55.077 INFO Using data:
+    url: http://localhost:3000/
+12:42:55.079 INFO Test started: test_by_gender
+12:42:55.079 INFO Navigate to: 'http://localhost:3000/'
+12:43:00.934 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+12:43:02.231 INFO Assert element active_tab text is 'Gender'
+12:43:02.273 INFO Assert element pay_equity_gap_label text is 'Pay Equity Gap'
+12:43:02.299 INFO Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'
+12:43:02.321 INFO Assert element employees_comparison_label text is 'Employees in Comparison'
+12:43:02.337 INFO Assert element employees_comparison_p text is 'Women make up 41% of employees'
+12:43:02.358 INFO Assert element budget_label text is 'Budget'
+12:43:02.375 INFO Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'
+12:43:02.388 ERROR AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'
+Traceback (most recent call last):
+  File "/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py", line 16, in test_by_gender
+    assert_element_text(dashboard_page.budget_p, "$235,000 minimum recommended budget to reduce pay equity gap")
+  File "/Users/home/env/lib/python3.10/site-packages/golem/actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'
+12:43:02.550 INFO Test Result: FAILURE

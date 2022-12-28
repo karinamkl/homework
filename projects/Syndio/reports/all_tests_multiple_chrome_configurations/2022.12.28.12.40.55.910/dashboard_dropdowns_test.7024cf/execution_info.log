@@ -1,0 +1,13 @@
+12:43:45.589 INFO Test execution started: dashboard_dropdowns_test
+12:43:45.589 INFO Browser: my_custom_chrome_phone
+12:43:45.589 INFO Environment: test
+12:43:45.589 INFO Using data:
+    url: http://localhost:3000/
+12:43:45.590 INFO Test started: test_options_in_dropdown
+12:43:45.590 INFO Navigate to: 'http://localhost:3000/'
+12:43:51.447 INFO Wait for element ('id', 'tab-gender', 'tab_gender') to be present
+12:43:52.253 INFO Click dropdown_button
+12:43:52.543 INFO Assert element group_by_function text is 'Group by Function'
+12:43:52.590 INFO Assert element group_by_role text is 'Group by Role'
+12:43:52.609 INFO Assert element disabled_dropdown_option text is 'Group by Function'
+12:43:52.616 INFO Test Result: SUCCESS

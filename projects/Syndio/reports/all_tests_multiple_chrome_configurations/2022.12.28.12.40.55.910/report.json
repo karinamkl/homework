@@ -1,0 +1,1525 @@
+{
+    "tests": [
+        {
+            "test_file": "dashboard_by_function_gender_test",
+            "test": "test_by_gender",
+            "set_name": "64c467",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_label text is 'Employees in Comparison'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_p text is 'Women make up 41% of employees'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_label text is 'Budget'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_f7920.png",
+                    "error": {
+                        "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                }
+            ],
+            "elapsed_time": 7.6,
+            "timestamp": "2022.12.28.12.43.02.614"
+        },
+        {
+            "test_file": "dashboard_by_function_race_test",
+            "test": "test_by_race",
+            "set_name": "c6e97b",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Hispanics earn 86¢ for every $1 earned by comparable Whites'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_8c8c3.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 8.0,
+            "timestamp": "2022.12.28.12.41.42.532"
+        },
+        {
+            "test_file": "dashboard_by_role_gender_test",
+            "test": "test_by_gender",
+            "set_name": "7dead6",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_af7ac.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.12,
+            "timestamp": "2022.12.28.12.41.13.598"
+        },
+        {
+            "test_file": "dashboard_by_function_race_test",
+            "test": "test_by_race",
+            "set_name": "d1177f",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Hispanics earn 86¢ for every $1 earned by comparable Whites'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_30d72.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.07,
+            "timestamp": "2022.12.28.12.41.27.976"
+        },
+        {
+            "test_file": "dashboard_by_role_race_test",
+            "test": "test_by_race",
+            "set_name": "039670",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Asians earn 87¢ for every $1 earned by comparable Hispanics'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_2cc1f.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 8.13,
+            "timestamp": "2022.12.28.12.41.57.975"
+        },
+        {
+            "test_file": "dashboard_can_select_by_role_test",
+            "test": "test_can_select_by_role",
+            "set_name": "3c2b03",
+            "environment": "test",
+            "result": "failure",
+            "description": null,
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_4a5a1.png",
+                    "error": {
+                        "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                }
+            ],
+            "elapsed_time": 7.04,
+            "timestamp": "2022.12.28.12.42.47.966"
+        },
+        {
+            "test_file": "dashboard_by_role_race_test",
+            "test": "test_by_race",
+            "set_name": "61746f",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Asians earn 87¢ for every $1 earned by comparable Hispanics'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_b6db2.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 6.8,
+            "timestamp": "2022.12.28.12.42.13.047"
+        },
+        {
+            "test_file": "dashboard_dropdowns_test",
+            "test": "test_options_in_dropdown",
+            "set_name": "3ed09e",
+            "environment": "test",
+            "result": "success",
+            "description": "Verify dashboard contains dropdown with Group by Function and Group by Role options. Group by Function is selected by default. ",
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_function text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_role text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 6.95,
+            "timestamp": "2022.12.28.12.43.31.027"
+        },
+        {
+            "test_file": "dashboard_by_role_gender_test",
+            "test": "test_by_gender",
+            "set_name": "100fb9",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_751c6.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 9.94,
+            "timestamp": "2022.12.28.12.40.56.422"
+        },
+        {
+            "test_file": "dashboard_by_role_gender_test",
+            "test": "test_by_gender",
+            "set_name": "9f7625",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_e51af.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.1,
+            "timestamp": "2022.12.28.12.41.06.434"
+        },
+        {
+            "test_file": "dashboard_can_select_by_role_test",
+            "test": "test_can_select_by_role",
+            "set_name": "a8a39f",
+            "environment": "test",
+            "result": "failure",
+            "description": null,
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_e9d31.png",
+                    "error": {
+                        "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                }
+            ],
+            "elapsed_time": 6.74,
+            "timestamp": "2022.12.28.12.42.41.158"
+        },
+        {
+            "test_file": "dashboard_can_select_by_role_test",
+            "test": "test_can_select_by_role",
+            "set_name": "b8a2a9",
+            "environment": "test",
+            "result": "failure",
+            "description": null,
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_ac199.png",
+                    "error": {
+                        "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                }
+            ],
+            "elapsed_time": 7.09,
+            "timestamp": "2022.12.28.12.42.27.111"
+        },
+        {
+            "test_file": "dashboard_by_function_gender_test",
+            "test": "test_by_gender",
+            "set_name": "8e6b1e",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_label text is 'Employees in Comparison'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_p text is 'Women make up 41% of employees'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_label text is 'Budget'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_def91.png",
+                    "error": {
+                        "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                }
+            ],
+            "elapsed_time": 6.77,
+            "timestamp": "2022.12.28.12.43.10.277"
+        },
+        {
+            "test_file": "dashboard_can_select_by_role_test",
+            "test": "test_can_select_by_role",
+            "set_name": "86b48e",
+            "environment": "test",
+            "result": "failure",
+            "description": null,
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_3ab7c.png",
+                    "error": {
+                        "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_can_select_by_role_test.py\", line 10, in test_can_select_by_role\n    dashboard_page.check_disabled_dropdown_option(\"Group by Role\")\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/pages/dashboard_page.py\", line 35, in check_disabled_dropdown_option\n    actions.assert_element_text(disabled_dropdown_option, option_name)\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element disabled_dropdown_option text to be 'Group by Role' but was 'Group by Function'"
+                }
+            ],
+            "elapsed_time": 6.82,
+            "timestamp": "2022.12.28.12.42.34.276"
+        },
+        {
+            "test_file": "dashboard_dropdowns_test",
+            "test": "test_options_in_dropdown",
+            "set_name": "ae7bc3",
+            "environment": "test",
+            "result": "success",
+            "description": "Verify dashboard contains dropdown with Group by Function and Group by Role options. Group by Function is selected by default. ",
+            "browser": "my_custom_chrome_tablet_vertical",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_function text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_role text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 7.48,
+            "timestamp": "2022.12.28.12.43.38.043"
+        },
+        {
+            "test_file": "dashboard_by_role_race_test",
+            "test": "test_by_race",
+            "set_name": "b188f0",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Asians earn 87¢ for every $1 earned by comparable Hispanics'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_9665e.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.14,
+            "timestamp": "2022.12.28.12.42.19.908"
+        },
+        {
+            "test_file": "dashboard_dropdowns_test",
+            "test": "test_options_in_dropdown",
+            "set_name": "7024cf",
+            "environment": "test",
+            "result": "success",
+            "description": "Verify dashboard contains dropdown with Group by Function and Group by Role options. Group by Function is selected by default. ",
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_function text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_role text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 7.03,
+            "timestamp": "2022.12.28.12.43.45.589"
+        },
+        {
+            "test_file": "dashboard_by_function_race_test",
+            "test": "test_by_race",
+            "set_name": "11d52d",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Hispanics earn 86¢ for every $1 earned by comparable Whites'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_d8e38.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.35,
+            "timestamp": "2022.12.28.12.41.35.114"
+        },
+        {
+            "test_file": "dashboard_by_function_race_test",
+            "test": "test_by_race",
+            "set_name": "753373",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Hispanics earn 86¢ for every $1 earned by comparable Whites'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_72795.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_race_test.py\", line 12, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Hispanics earn 86¢ for every $1 earned by comparable Whites\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Hispanics earn 86¢ for every $1 earned by comparable Whites' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.31,
+            "timestamp": "2022.12.28.12.41.50.596"
+        },
+        {
+            "test_file": "dashboard_by_role_race_test",
+            "test": "test_by_race",
+            "set_name": "7002e6",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Race tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_tablet_horizontal",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-race', 'tab_race') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click tab_race",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Race'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Asians earn 87¢ for every $1 earned by comparable Hispanics'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_3fc80.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_race_test.py\", line 15, in test_by_race\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Asians earn 87¢ for every $1 earned by comparable Hispanics\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Asians earn 87¢ for every $1 earned by comparable Hispanics' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 6.8,
+            "timestamp": "2022.12.28.12.42.06.176"
+        },
+        {
+            "test_file": "dashboard_by_function_gender_test",
+            "test": "test_by_gender",
+            "set_name": "e39150",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_label text is 'Employees in Comparison'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_p text is 'Women make up 41% of employees'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_label text is 'Budget'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_3b195.png",
+                    "error": {
+                        "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                }
+            ],
+            "elapsed_time": 6.85,
+            "timestamp": "2022.12.28.12.43.17.108"
+        },
+        {
+            "test_file": "dashboard_by_function_gender_test",
+            "test": "test_by_gender",
+            "set_name": "31c285",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Function and Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_label text is 'Employees in Comparison'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element employees_comparison_p text is 'Women make up 41% of employees'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_label text is 'Budget'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element budget_p text is '$235,000 minimum recommended budget to reduce pay equity gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_51ace.png",
+                    "error": {
+                        "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_function_gender_test.py\", line 16, in test_by_gender\n    assert_element_text(dashboard_page.budget_p, \"$235,000 minimum recommended budget to reduce pay equity gap\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element budget_p text to be '$235,000 minimum recommended budget to reduce pay equity gap' but was '$235,000 minimum recommended buget to reduce pay equity gap'"
+                }
+            ],
+            "elapsed_time": 7.47,
+            "timestamp": "2022.12.28.12.42.55.077"
+        },
+        {
+            "test_file": "dashboard_dropdowns_test",
+            "test": "test_options_in_dropdown",
+            "set_name": "7bf156",
+            "environment": "test",
+            "result": "success",
+            "description": "Verify dashboard contains dropdown with Group by Function and Group by Role options. Group by Function is selected by default. ",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_function text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element group_by_role text is 'Group by Role'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element disabled_dropdown_option text is 'Group by Function'",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 6.94,
+            "timestamp": "2022.12.28.12.43.24.023"
+        },
+        {
+            "test_file": "dashboard_by_role_gender_test",
+            "test": "test_by_gender",
+            "set_name": "ce5f30",
+            "environment": "test",
+            "result": "failure",
+            "description": "Verify when Grouped by Role and either Gender tab is selected, text displayed on page is correct and correct tab is highlighted. ",
+            "browser": "my_custom_chrome_phone",
+            "test_data": {
+                "env": "{'url': 'http://localhost:3000/', 'name': 'test'}"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://localhost:3000/'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click dropdown_button",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click group_by_role",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('id', 'tab-gender', 'tab_gender') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element active_tab text is 'Gender'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_label text is 'Pay Equity Gap'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Assert element pay_equity_gap_p text is 'Men earn 97¢ for every $1 earned by comparable Women'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Failure",
+                    "screenshot": "Failure_4cd3a.png",
+                    "error": {
+                        "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                        "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "AssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'",
+                    "description": "Traceback (most recent call last):\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/test_runner/test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"/Users/home/Documents/Projects/test/projects/Syndio/tests/dashboard_by_role_gender_test.py\", line 14, in test_by_gender\n    assert_element_text(dashboard_page.pay_equity_gap_p, \"Men earn 97¢ for every $1 earned by comparable Women\")\n  File \"/Users/home/env/lib/python3.10/site-packages/golem/actions.py\", line 560, in assert_element_text\n    assert element.text == text, msg\nAssertionError: expected element pay_equity_gap_p text to be 'Men earn 97¢ for every $1 earned by comparable Women' but was 'Women earn 96¢ for every $1 earned by comparable Men'"
+                }
+            ],
+            "elapsed_time": 7.13,
+            "timestamp": "2022.12.28.12.41.20.781"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "capabilities": {}
+            },
+            {
+                "name": "my_custom_chrome_tablet_horizontal",
+                "capabilities": {}
+            },
+            {
+                "name": "my_custom_chrome_tablet_vertical",
+                "capabilities": {}
+            },
+            {
+                "name": "my_custom_chrome_phone",
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 24,
+    "totals_by_result": {
+        "failure": 20,
+        "success": 4
+    },
+    "net_elapsed_time": 176.26,
+    "has_finished": true
+}
